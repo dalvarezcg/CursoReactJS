@@ -1,0 +1,18 @@
+.newMessage {
+    background-color: #ffffff;
+}
+
+.newMessage input {
+    background-color: #ffffff;
+    color: white;
+    height: auto;
+    width: 85%;  /* Ancho del div */
+    height: 35px; /* Alto del div */
+}
+
+.newMessage button {
+    background-color: #cebe8a;
+    color: #006156;
+    text-align: right;
+    
+}
