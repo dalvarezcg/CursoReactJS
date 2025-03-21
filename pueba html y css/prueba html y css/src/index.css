@@ -5,14 +5,13 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #f7f9fa;
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 a {
   font-weight: 500;
@@ -30,24 +29,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-label{
-  color: black;
-  text-align: left;
-}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  color: black;
-}
-h2 {
-  line-height: 1.1;
-  color: black;
-  padding: 0px;
-}
-p{
-  color: black;
-  padding: 0px;
 }
 
 button {
@@ -60,7 +45,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  width: 100%;
 }
 button:hover {
   border-color: #646cff;
@@ -81,32 +65,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-.divContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ffffff;
-}
-
-.divCampo {
-  display: flex;
-  flex-direction:column; /* Apila los elementos en columna */
-  margin-bottom: 10px;
-  width: 100%; /* Ocupa todo el ancho disponible */
-}
-
-.divCampo2 {
-  display:flexbox;  
-}
-
-input {
-  background-color: #ffffff;
-  padding: 12px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde */
-  border-radius: 4px; /* Borde redondeado */
-  box-sizing: border-box; /* Asegura que el ancho del input sea el mismo que el ancho del div */  
 }

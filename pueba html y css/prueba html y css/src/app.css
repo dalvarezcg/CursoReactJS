@@ -1,0 +1,37 @@
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.divMain{
+  color: red;
+  background-color: green;
+  padding-left: 100px;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+.appH1{
+  color: rgb(11, 24, 95);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.preact:hover {
+  filter: drop-shadow(0 0 2em #673ab8aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

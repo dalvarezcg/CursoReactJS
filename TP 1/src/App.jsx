@@ -8,35 +8,35 @@ function App() {
 
   return (
     <>
-      <div className="root">
+      <div className="divContainer">
         <form>
           <div>
             <h2>Create an account</h2>
             <p>Enter your information to register</p>
           </div>
-          <div>
+          <div className="divCampo2">
             <label for="firstName">First Name</label>
-            <input type="text" placeholder="FirstName" />
-            <label for="lastName">First Name</label>
-            <input type="text" placeholder="LastName" />
+            <input type="text" id="firstName" placeholder="FirstName" />
+            <label for="lastName">Last Name</label>
+            <input type="text" id='lastName' placeholder="LastName" />
           </div>
-          <div>
+          <div className='divCampo'>
             <label for="email">Email</label>
             <input type="text" placeholder="Email" />
           </div>
-          <div>
+          <div className='divCampo'>
             <label for="phone">Phone</label>
             <input type="text" placeholder="Phone" />
           </div>
-          <div> 
+          <div className='divCampo'>
             <label for="password">Password</label>
             <input type="password" placeholder="****"></input>
           </div>
-          <div>
+          <div className='divCampo'>
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" placeholder="*****"></input>
           </div>
-          <div>
+          <div className='divButton'>
             <button type="submit">Register</button>
           </div>
         </form>
