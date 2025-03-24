@@ -2,12 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { FormRegister } from './components/FormRegister/FormRegister' 
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <FormRegister/>
+    
+    /*<>
       <div className="divContainer">
         <form>
           <div>
@@ -15,25 +18,25 @@ function App() {
             <p>Enter your information to register</p>
           </div>
           <div className="divCampo2">
-            <label for="firstName">First Name</label>
+            <label htmlFor="firstName">First Name</label>
             <input type="text" id="firstName" placeholder="FirstName" />
-            <label for="lastName">Last Name</label>
+            <label htmlFor="lastName">Last Name</label>
             <input type="text" id='lastName' placeholder="LastName" />
           </div>
           <div className='divCampo'>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="text" placeholder="Email" />
           </div>
           <div className='divCampo'>
-            <label for="phone">Phone</label>
+            <label htmlFor="phone">Phone</label>
             <input type="text" placeholder="Phone" />
           </div>
           <div className='divCampo'>
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input type="password" placeholder="****"></input>
           </div>
           <div className='divCampo'>
-            <label for="confirmPassword">Confirm Password</label>
+            <label htmlFor="confirmPassword">Confirm Password</label>
             <input type="password" placeholder="*****"></input>
           </div>
           <div className='divButton'>
@@ -41,7 +44,7 @@ function App() {
           </div>
         </form>
       </div>
-    </>
+    </>*/
   )
 }
 
