@@ -10,3 +10,10 @@
     color: black;
     text-align: left;
   }
+
+  .divInputField{
+    display: flex;
+    flex-direction:column; /* Apila los elementos en columna */
+    margin-bottom: 10px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }

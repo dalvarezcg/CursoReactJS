@@ -3,9 +3,9 @@ import './InputField.css'
 
 export function InputField({LabelTexto, InputPlaceHolder, InputId}) {
     return (
-        <div>
+        <div className='divInputField'>
             <label className='labelInputField'>{ LabelTexto }</label>
-            <input type="text" className='inputField' id={InputId} placeholder= {InputPlaceHolder} />
+            <input className='inputField' type="text" placeholder= {InputPlaceHolder} />
         </div>
     )
 }
