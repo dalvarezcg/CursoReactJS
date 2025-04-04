@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productoContainer {
+    width: 200px;                /* 🔹 Asegura tamaño fijo para alinear como columnas */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .productosWrapper {
+    display: flex;               /* 🔹 Distribuye los productos en fila */
+    flex-wrap: wrap;             /* 🔹 Permite que pasen a la siguiente línea si no entran */
+    gap: 16px;                   /* 🔹 Espacio entre productos */
+    justify-content: center;     /* 🔹 Centrado horizontal (opcional) */
+  }
+  
+.nombreProducto{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+} 
+.precioReal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+    color:gray;
+    font-size: 20px;
+}
+.precioFinal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.porcentajeOferta{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.cantidadDisponible{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}   

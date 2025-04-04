@@ -1,0 +1,6 @@
+.productosWrapper {
+    display: flex;               /* 🔹 Distribuye los productos en fila */
+    flex-wrap: wrap;             /* 🔹 Permite que pasen a la siguiente línea si no entran */
+    gap: 16px;                   /* 🔹 Espacio entre productos */
+    justify-content: center;     /* 🔹 Centrado horizontal (opcional) */
+  }

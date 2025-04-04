@@ -1,0 +1,22 @@
+.divBotonComprar{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.boton-comprar {
+    background-color: #4CAF50;      /* verde suave */
+    color: white;                   /* texto blanco */
+    padding: 10px 20px;             /* espacio interno */
+    font-size: 16px;                /* tamaño de fuente */
+    border: none;                   /* sin borde */
+    border-radius: 8px;             /* bordes redondeados */
+    cursor: pointer;                /* mano al pasar */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra sutil */
+  }
+  
+  .boton-comprar:hover {
+    background-color: #45a049;      /* verde un poco más oscuro al pasar el mouse */
+    transform: scale(1.03);         /* leve agrandamiento */
+  }

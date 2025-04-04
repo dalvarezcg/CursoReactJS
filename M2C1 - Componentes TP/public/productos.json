@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Smart TV Sansei 32 Pulgadas LED HD", 
+        "imagen": "http://localhost:5173/tv.jpg",
+        "precioReal": 100, 
+        "precioFinal": 80, 
+        "porcentajeOferta": 20, 
+        "cantidadDisponible": 5
+    },
+    {
+        "id": 2,
+        "nombre": "Smart TV 45 pulgadas", 
+        "imagen": "http://localhost:5173/tv.jpg",
+        "precioReal": 100, 
+        "precioFinal": 80, 
+        "porcentajeOferta": 20, 
+        "cantidadDisponible": 10
+    }
+]

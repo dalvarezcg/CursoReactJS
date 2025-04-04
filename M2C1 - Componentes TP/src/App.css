@@ -1,0 +1,7 @@
+.container-app{
+    display: flex;
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
+    height: 100vh;             /* alto igual a toda la pantalla */
+    background-color: brown;
+}
