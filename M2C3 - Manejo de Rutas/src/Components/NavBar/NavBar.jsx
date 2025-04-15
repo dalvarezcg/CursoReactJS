@@ -25,6 +25,20 @@ const NavBar = () => {
                 }}
                 >Home
             </NavLink>
+            <NavLink 
+                to={"/"}
+                className={
+                    ({isActive}) => {                  
+                
+                    if (isActive) {
+                        return "link"                    
+                    }
+                    else{
+                        return "link link-seleccionado"
+                    }
+                }}
+                >Contacto
+            </NavLink>
         </nav>
       </header>
     </div>
