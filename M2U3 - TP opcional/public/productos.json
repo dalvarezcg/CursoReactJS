@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Gibson Wes Montgomery L-5 Ces", 
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_679996-MLA80231235051_102024-O.webp",
+        "precioReal": 100, 
+        "precioFinal": 80, 
+        "porcentajeOferta": 20, 
+        "cantidadDisponible": 5
+    },
+    {
+        "id": 2,
+        "nombre": "Fender Jaguar Año 1965 Olympic White", 
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_915466-MLA80231212533_102024-O.webp",
+        "precioReal": 100, 
+        "precioFinal": 80, 
+        "porcentajeOferta": 20, 
+        "cantidadDisponible": 10
+    }
+]

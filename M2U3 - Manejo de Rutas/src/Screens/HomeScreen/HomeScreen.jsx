@@ -5,7 +5,7 @@ const HomeScreen = () => {
   return (
     <div>
       <NavBar/>    
-      <h1>Catalogo de productos</h1>    
+      <h1>Home</h1>    
     </div>
   )
 }

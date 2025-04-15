@@ -7,8 +7,13 @@ function App() {
   console.log(useLocation)
   return (
     <Routes>
-      <Route path="/" element={<HomeScreen/>}/>
-      <Route path={"/contact"} element={<ContactScreen/>}/>
+      <Route 
+        path="/" 
+        element={<HomeScreen/>}/>
+      
+      <Route 
+        path={"/contact"} 
+        element={<ContactScreen/>}/>
     </Routes>
   )
 }
