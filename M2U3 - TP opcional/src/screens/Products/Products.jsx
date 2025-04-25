@@ -27,8 +27,7 @@ const ProductList = () => {
       <h1>PRODUCTOS</h1>
       {
         productos.map(producto => (
-          <Product key={producto.id} {...producto}/>
-          
+          <Product key={producto.id} {...producto}/>          
         ))
       }
     </div>
