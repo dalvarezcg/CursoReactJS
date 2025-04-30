@@ -26,8 +26,7 @@ const ProductList = () => {
 
   return (
     <div className="product-list-container">
-      <Navbar/>
-      
+      <Navbar/>      
       {cargando ? (
         <div className="loading-message">Cargando productos...</div>
       ) : (
