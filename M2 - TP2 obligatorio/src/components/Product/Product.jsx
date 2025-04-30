@@ -22,6 +22,7 @@ const Product = ({id, title, img, final_price}) => {
             <button type="submit" 
                     className='button' 
                     onClick={handleDetailClick}>Detalle</button>
+            <button type="submit" className='button'>Comprar</button>
           </div>
       </div>
     </div>

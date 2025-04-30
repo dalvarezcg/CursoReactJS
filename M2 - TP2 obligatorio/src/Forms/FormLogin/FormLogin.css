@@ -11,6 +11,7 @@
 .divContainer {
   background-color: var(--light-bg);
   border: 1px solid var(--border-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .divButton button {
