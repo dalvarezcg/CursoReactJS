@@ -1,15 +1,11 @@
-import {React, useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Product from '../../components/Product/Product'
-import { useParams } from 'react-router-dom'
+import './ProductList.css' // Importamos los estilos
 
-const ProductDetail = () => {
+const ProductList = () => {
   const [productos, setProductos] = useState([]);
   const [cargando, setCargando] = useState(false);
-  
-  const { id } = useParams();
-
-  console.log("ProductDetail" + id);
 
   const ObtenerProductos = async () => {
     setCargando(true);
@@ -25,22 +21,24 @@ const ProductDetail = () => {
   }
 
   useEffect(() => {
-      ObtenerProductos();
-    }, []);
+    ObtenerProductos();
+  }, []);
 
   return (
-    <div>
+    <div className="product-list-container">
       <Navbar/>
-      <div className="products-grid">
-      {productos
-        .filter(producto => producto.id == id)
-        .map(producto => (
-          <Product key={producto.id} {...producto}/>
-        ))
-      }
-      </div>
+      
+      {cargando ? (
+        <div className="loading-message">Cargando productos...</div>
+      ) : (
+        <div className="products-grid">
+          {productos.map(producto => (          
+            <Product key={producto.id} {...producto}/>          
+          ))}
+        </div>
+      )}
     </div>
   )
 }
 
-export default ProductDetail
+export default ProductList

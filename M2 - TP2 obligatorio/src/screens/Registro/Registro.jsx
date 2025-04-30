@@ -1,11 +1,12 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import FormRegister from '../../Forms/FormRegister/FormRegister'
 
 const Registro = () => {
   return (
     <div>
-        <Navbar/>
-        <h1>REGISTRO</h1>      
+        <Navbar/>     
+        <FormRegister/>
     </div>
   )
 }
