@@ -38,7 +38,6 @@ const ProductList = () => {
                 {...product}
                 key={product.id}
                 title={product.title}
-                is_admin={isAdmin}
             />
         }
     )
