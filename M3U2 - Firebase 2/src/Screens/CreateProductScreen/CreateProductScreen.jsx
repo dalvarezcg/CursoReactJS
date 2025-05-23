@@ -1,5 +1,7 @@
-import { addDoc } from 'firebase/firestore'
+import { addDoc, collection } from 'firebase/firestore'
 import React ,{ useState} from 'react'
+import database from '../../config/firebase'
+import Navbar from '../../Components/Navbar/Navbar'
 
 const CreateProductScreen = () => {
     let inicial_state_form = {
@@ -32,23 +34,34 @@ const CreateProductScreen = () => {
                     }   
                 )
     const data = await response.json()    
+    console.log('Respuesta de IMGBB:', data)
     return data.data.url
   }
 
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    const url_img = await unloadImgToImgBB(form_state.img)
+    const url_img = await uploadImgToImgBB(form_state.img)
     console.log(url_img)
     const collection_ref = collection(database, 'products')
     await addDoc(collection_ref, {...form_state, img: url_img})
+    /*await addDoc(
+            collection_ref,
+            {
+                title: form_state.title,
+                price: form_state.price,
+                discount: form_state.discount,
+                img: url_img
+            }
+        )*/
     setform_state(inicial_state_form)//reinializo el formulario
   }
 console.log(form_state)
   return (
     <div>
+      <Navbar/>
       <h1>Crea tu producto</h1>
-            <form onssubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="title">Titulo:</label>
                     <input 
